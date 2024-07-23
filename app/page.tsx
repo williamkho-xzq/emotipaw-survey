@@ -54,8 +54,8 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gray-100 text-black">
-      <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-gray-100 text-black px-4 sm:px-6">
+      <div className="min-h-screen bg-gray-100 py-6 flex flex-col">
         <Head>
           <title>EmotiPaw: AI Pet Emotion Recognition Study</title>
           <link rel="icon" href="/favicon.ico" />
