@@ -11,12 +11,12 @@ type SurveyLink = {
 
 const surveyLinks = [
   {
-    website: process.env.NEXT_PUBLIC_LITE_WEBSITE_URL,
-    survey: process.env.NEXT_PUBLIC_LITE_SURVEY_URL,
+    website: process.env.NEXT_PUBLIC_GROUP_A_WEBSITE_URL,
+    survey: process.env.NEXT_PUBLIC_GROUP_A_SURVEY_URL,
   },
   {
-    website: process.env.NEXT_PUBLIC_PRO_WEBSITE_URL,
-    survey: process.env.NEXT_PUBLIC_PRO_SURVEY_URL,
+    website: process.env.NEXT_PUBLIC_GROUP_B_WEBSITE_URL,
+    survey: process.env.NEXT_PUBLIC_GROUP_B_SURVEY_URL,
   },
 ];
 
