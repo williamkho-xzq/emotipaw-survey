@@ -6,15 +6,15 @@ const IntroductionScript: React.FC<IntroductionScriptProps> = ({ onAgree }) => {
   return (
     <div className="space-y-4">
       <p className="text-gray-700">
-        {`Welcome to our study on AI's ability to recognize pets' emotions and the
+        {`Welcome to our study on AI's ability to recognize pet's emotions and the
         level of trust users have in AI technology for their animals'
         well-being.`}
       </p>
       <p className="text-gray-700">In this study, you will:</p>
       <ul className="list-disc list-inside text-gray-700 space-y-2">
         <li>
-          Use a website that utilizes AI to analyse pet emotions from their
-          photos.
+          {`Use a website that utilizes AI to analyse pet's emotions from their
+          photos.`}
         </li>
         <li>
           {`Upload a photo of your pet and review the AI's emotional assessment.`}
