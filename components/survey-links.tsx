@@ -52,8 +52,18 @@ const SurveyLinks: React.FC<SurveyLinksProps> = ({ group, onComplete }) => {
             Questionnaire
           </a>
         </li>
-        <li>Try the EmotiPaw Lite version and answer some questions</li>
-        <li>Try the EmotiPaw Pro version and answer more questions</li>
+        <li>
+          Try the EmotiPaw Lite version and answer some questions
+          <p className="mt-2 text-sm text-gray-600">
+            Please upload at least 3 photos when testing
+          </p>
+        </li>
+        <li>
+          Try the EmotiPaw Pro version and answer more questions{" "}
+          <p className="mt-2 text-sm text-gray-600">
+            Please upload at least 3 photos when testing
+          </p>
+        </li>
         <li>Share your overall thoughts on the technology</li>
       </ol>
       <p className="text-gray-700 mt-4">
