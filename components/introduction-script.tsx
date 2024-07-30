@@ -27,6 +27,11 @@ const IntroductionScript: React.FC<IntroductionScriptProps> = ({ onAgree }) => {
         opinions.
       </p>
       <p className="text-gray-700">
+        {`This survey has been ethically approved by the University of Glasgow,
+        ensuring that all procedures adhere to strict ethical guidelines to
+        protect your rights and well-being as a participant.`}
+      </p>
+      <p className="text-gray-700">
         {`Participation is completely voluntary. You are free to leave the study
         at any point. However, if you choose to leave early, we will not be able
         to provide a full explanation of the study's objectives afterwards.`}
