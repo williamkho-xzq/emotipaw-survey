@@ -22,9 +22,9 @@ const IntroductionScript: React.FC<IntroductionScriptProps> = ({ onAgree }) => {
         <li>Share your thoughts and complete a brief questionnaire.</li>
       </ul>
       <p className="text-gray-700">
-        We will be recording your interactions with the website and your
-        responses. This study is not an assessment of your skills; we are
-        specifically interested in your honest reactions and opinions.
+        We will be recording your responses. This study is not an assessment of
+        your skills; we are specifically interested in your honest reactions and
+        opinions.
       </p>
       <p className="text-gray-700">
         {`Participation is completely voluntary. You are free to leave the study
