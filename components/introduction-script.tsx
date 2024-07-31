@@ -28,7 +28,7 @@ const IntroductionScript: React.FC<IntroductionScriptProps> = ({ onAgree }) => {
         opinions.
       </p>
       <p className="text-gray-700">
-        {`Participation is completely voluntary. You are free to leave the study
+        {`Participation is completely voluntary and all responses will be kept confidential. You are free to leave the study
         at any point. However, if you choose to leave early, we will not be able
         to provide a full explanation of the study's objectives afterwards.`}
       </p>
