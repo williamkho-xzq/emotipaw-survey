@@ -1,8 +1,30 @@
 const contactEmail = "2731698k@student.gla.ac.uk";
 
 const modelVersions = [
-  { first: "Lite", second: "Pro" },
-  { first: "Pro", second: "Lite" },
+  {
+    first: `The "Lite" version was entirely fabricated. It
+          provided random responses regardless of the uploaded image. This
+          deception was intentional in assessing whether users would trust a
+          system simply because it was labelled as AI technology.`,
+    second: `The "Pro" version used GPT-4, a large language
+          model. While its responses may have appeared plausible, it is
+          important to note that such models can produce inaccurate or
+          fabricated information. The emotional assessments were not necessarily
+          accurate or based on validated scientific methods for animal emotion
+          recognition.`,
+  },
+  {
+    first: `The "Lite" version used GPT-4, a large language
+          model. While its responses may have appeared plausible, it is
+          important to note that such models can produce inaccurate or
+          fabricated information. The emotional assessments were not necessarily
+          accurate or based on validated scientific methods for animal emotion
+          recognition.`,
+    second: `The "Pro" version was entirely fabricated. It
+          provided random responses regardless of the uploaded image. This
+          deception was intentional in assessing whether users would trust a
+          system simply because it was labelled as AI technology.`,
+  },
 ];
 
 interface DebriefScriptProps {
@@ -35,20 +57,8 @@ const DebriefScript: React.FC<DebriefScriptProps> = ({ group }) => {
         claimed to use AI for recognizing pet emotions:`}
       </p>
       <ul className="list-disc list-inside text-gray-700 space-y-2">
-        <li>
-          {`The "${modelVersion.first} version" was entirely fabricated. It
-          provided random responses regardless of the uploaded image. This
-          deception was intentional in assessing whether users would trust a
-          system simply because it was labelled as AI technology.`}
-        </li>
-        <li>
-          {`The "${modelVersion.second} version" used GPT-4, a large language
-          model. While its responses may have appeared plausible, it is
-          important to note that such models can produce inaccurate or
-          fabricated information. The emotional assessments were not necessarily
-          accurate or based on validated scientific methods for animal emotion
-          recognition.`}
-        </li>
+        <li>{`${modelVersion.first}`}</li>
+        <li>{`${modelVersion.second}`}</li>
       </ul>
 
       <h3 className="text-lg font-semibold mt-4">Additional Aims:</h3>
