@@ -10,7 +10,7 @@ interface DebriefScriptProps {
 }
 
 const DebriefScript: React.FC<DebriefScriptProps> = ({ group }) => {
-  let modelVersion = group === "A" ? modelVersions[0] : modelVersions[1];
+  let modelVersion = group === "A" ? modelVersions[1] : modelVersions[0];
 
   return (
     <div className="space-y-4">
