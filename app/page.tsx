@@ -13,7 +13,7 @@ const assignGroup = () => {
 
   let threshold = Number(process.env.NEXT_PUBLIC_GROUP_ASSIGNMENT_THRESHOLD);
 
-  let group = timestamp % 4 < threshold ? "A" : "B";
+  let group = timestamp % 2 == 0 ? "A" : "B";
 
   return group;
 };
