@@ -1,6 +1,7 @@
 interface IntroductionScriptProps {
   onAgree: () => void;
 }
+const contactEmail = "2731698k@student.gla.ac.uk";
 
 const IntroductionScript: React.FC<IntroductionScriptProps> = ({ onAgree }) => {
   return (
@@ -36,6 +37,7 @@ const IntroductionScript: React.FC<IntroductionScriptProps> = ({ onAgree }) => {
         ensuring that all procedures adhere to strict ethical guidelines to
         protect your rights and well-being as a participant.`}
       </p>
+
       <p className="text-gray-700 font-semibold">
         Do you agree to participate and allow us to collect and analyse the data
         as outlined?
@@ -46,6 +48,19 @@ const IntroductionScript: React.FC<IntroductionScriptProps> = ({ onAgree }) => {
       >
         I Agree to Participate
       </button>
+      <hr></hr>
+      <p className="text-gray-700">
+        {`For any future questions or comments, please contact:`}
+      </p>
+      <div className="flex items-center space-x-4 mt-2">
+        <p className="text-gray-700 font-semibold">{contactEmail}</p>
+        <a
+          href={`mailto:${contactEmail}`}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out"
+        >
+          Send Email
+        </a>
+      </div>
     </div>
   );
 };
