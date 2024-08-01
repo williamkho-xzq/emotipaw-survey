@@ -25,12 +25,12 @@ const SurveyLinks: React.FC<SurveyLinksProps> = ({ group, onComplete }) => {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-xl font-bold mb-4">Important Reminder</h1>
+      {/* <h1 className="text-xl font-bold mb-4">Important Reminder</h1>
       <p className="text-gray-700">
         {`Please keep this tab open until the experiment concludes to ensure
         accurate results. Thank you for your cooperation!`}
       </p>
-      <hr></hr>
+      <hr></hr> */}
       <h1 className="text-xl font-semibold mb-4">Study Links</h1>
       <p className="text-gray-700">
         Please follow these steps to complete the study:
