@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import DebriefScript from "@/components/debrief-script";
 import IntroductionScript from "@/components/introduction-script";
@@ -17,9 +17,10 @@ const assignGroup = () => {
 
   return group;
 };
-const group = assignGroup();
+// const group = assignGroup();
 
 export default function Home() {
+  const [group, setGroup] = useState<string | null>();
   const [agreed, setAgreed] = useState(false);
   const [completed, setCompleted] = useState(false);
 
@@ -40,7 +41,7 @@ export default function Home() {
 
   console.log(group);
 
-  const renderStep = () => {
+  const renderStep = (group: string) => {
     switch (step) {
       case 0:
         return <IntroductionScript onAgree={nextStep} />;
@@ -52,6 +53,33 @@ export default function Home() {
         return null;
     }
   };
+
+  useEffect(() => {
+    const storedGroup = localStorage.getItem("experimentGroup");
+    if (storedGroup) {
+      console.log(`Stored group: ${storedGroup}`);
+      setGroup(storedGroup);
+    } else {
+      const newGroup = assignGroup();
+      console.log(`New group: ${newGroup}`);
+      localStorage.setItem("experimentGroup", newGroup);
+      setGroup(newGroup);
+    }
+  }, []);
+
+  if (!group) {
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-between bg-gray-100 text-black px-4 sm:px-6">
+        <div className="min-h-screen bg-gray-100 py-6 flex flex-col">
+          <Head>
+            <title>EmotiPaw: AI Pet Emotion Recognition Study</title>
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+        </div>
+        <div className="relative py-3 sm:max-w-3xl sm:mx-auto w-full px-4 sm:px-0"></div>
+      </main>
+    );
+  }
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-gray-100 text-black px-4 sm:px-6">
@@ -69,7 +97,7 @@ export default function Home() {
                 EmotiPaw: AI Pet Emotion Recognition Study
               </h1>
 
-              {renderStep()}
+              {renderStep(group)}
 
               <div className="mt-8 flex justify-start">
                 {step > 0 && (
