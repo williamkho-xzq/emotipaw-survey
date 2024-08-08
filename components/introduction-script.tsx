@@ -25,7 +25,7 @@ const IntroductionScript: React.FC<IntroductionScriptProps> = ({ onAgree }) => {
       <p className="text-gray-700">We are looking for:</p>
       <ul className="list-disc list-inside text-gray-700 space-y-2">
         <li>{`Dog or cat owners`}</li>
-        <li>{`UK residents, 16 years age or older`}</li>
+        <li>{`16 years age or older`}</li>
       </ul>
       <p className="text-gray-700">
         {`We will be recording your responses. This study is not an assessment of
