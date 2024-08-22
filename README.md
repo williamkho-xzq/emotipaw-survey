@@ -16,7 +16,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Next, in order to run the application fully functional you need to provide an environment variables file using this format with file name `.env.development.local`
+Next, in order to run the application fully functional locally, you will need to provide an environment variables file using this format with file name `.env.development.local`
 ```
 NEXT_PUBLIC_GROUP_ASSIGNMENT_THRESHOLD=2
 NEXT_PUBLIC_GROUP_A_WEBSITE_URL="https://emotipaw.vercel.app/"
