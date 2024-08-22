@@ -16,9 +16,14 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Next, in order to run the application fully functional you need to provide an environment variables file using this format with file name `.env.development.local`
+```
+NEXT_PUBLIC_GROUP_ASSIGNMENT_THRESHOLD=2
+NEXT_PUBLIC_GROUP_A_WEBSITE_URL="https://emotipaw.vercel.app/"
+NEXT_PUBLIC_GROUP_A_SURVEY_URL="https://forms.office.com/e/TxaJ30bU93"
+NEXT_PUBLIC_GROUP_B_WEBSITE_URL="https://emotipaw-ai.vercel.app"
+NEXT_PUBLIC_GROUP_B_SURVEY_URL="https://forms.office.com/e/1eswTKrhHz"
+```
 
 ## Learn More
 
